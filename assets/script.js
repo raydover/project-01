@@ -20,12 +20,21 @@ inputForm.on("submit", function (event) {
     console.log(input.val());
 
     // dictionary request
-    $.ajax(dictionaryURL).done(function (response) {
-        console.log(response);
+    $.ajax(dictionaryURL).done(function (data) {
+        console.log(data);
+        $(gifBox).empty();
+
+        // For loop goes here
+        for (var result of data.results) {
+            var h3El = $("<h3>");
+            $(h3El).addClass("card p-3 bg-light text-dark");
+            $(h3El).text(result.examples);
+            $(gifBox).append(h3El);
+        }
     });
 
     //giphy request
-    $.ajax(giphyURL).done(function (response) {
+    $.ajax(giphyURL).then(function (response) {
         console.log(response);
     });
 })
