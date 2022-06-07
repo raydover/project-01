@@ -1,23 +1,34 @@
-//Oxford API info
-var appID = "d4b9e78c"
-var appKey = "b2220ce54c9dca016aaba7037e9f150f"
-var requestURL = "https://od-api.oxforddictionaries.com/api/v2/entries/en-us/hello";
+//Var declarations
+var dictionaryBox = $("#search-result");
+var gifBox = $("#gif");
+var inputForm = $("#word-search-form");
+var input = $("#q");
+var submitBtn = $("#submit-btn");
 
-//Translate API info
+
 
 //init function
-function init() {
-    //return to this later
-    //    fetch(requestURL)
-    //     .then(function(response) {
-    //         return response.json();
-    //     })
-    //     .then(function(data) {
-    //         console.log(data);
-    //     });
-}
+// function init() {    
+// }
 
-//Event Listeners
+inputForm.on("submit", function (event) {
+    event.preventDefault();
+    //Oxford API info
+    var dictionaryURL = "https://oxford-proxy-20220607.herokuapp.com/entries/en-us/" + input.val();
+    //GIPHY API info
+    var giphyURL = "https://api.giphy.com/v1/gifs/translate?api_key=f9Sfzf5olgyAfmNjLmdk5iCZob04128e&s=" + input.val();
+    console.log(input.val());
+
+    // dictionary request
+    $.ajax(dictionaryURL).done(function (response) {
+        console.log(response);
+    });
+
+    //giphy request
+    $.ajax(giphyURL).done(function (response) {
+        console.log(response);
+    });
+})
 
 //Runs the functions
-init();
+// init();
