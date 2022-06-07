@@ -28,7 +28,7 @@
 
     <!-- Word input and search button -->
     <section class="row">
-        <aside class="col-12 col-md-3 p-4 my-3 bg-light text-dark">
+        <div class="col-lg-4 col-sm-12 p-4 my-3 bg-light text-dark">
             <form id="word-search-form">
                 <fieldset>
                     <legend>Search for a Word!</legend>
@@ -38,26 +38,9 @@
                     <button type="submit" class="btn btn-dark text-light">Submit</button>
                 </fieldset>
             </form>
-        </aside>
-    </section>
+        </div>
 
-    <!-- Container for group and API info -->
-    <section class="row">
-        <aside class="col-12 col-md-3 p-4 my-3 bg-light text-dark">
-            <h2 id="about"> Our Mission </h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat temporibus eligendi quidem nulla
-                perspiciatis. Dolor doloremque aut deleniti adipisci eius beatae, asperiores soluta quibusdam
-                praesentium, sapiente esse ut eligendi odit?</p>
-            <h2 id="api">APIs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor illum error ducimus ex? Ut assumenda
-                aspernatur saepe aperiam molestiae eaque est dolore incidunt nulla quam dicta pariatur, obcaecati
-                deleniti illum!</p>
-        </aside>
-    </section>
-
-    <!-- Container to hold wordAPI data -->
-    <section class="row">
-        <main class="col-12 col-md-3 p-4 bg-light text-dark">
+        <main class="col-lg-8 col-sm-12 p-4 my-3 bg-light text-dark">
             <h2>Your Word!</h2>
             <section id="search-result">
                 <article class="card p-3 bg-dark text-light">
@@ -69,16 +52,37 @@
         </main>
     </section>
 
-    <!-- Container for Microsoft translate API data -->
+
+
+    <!-- Container for group and API info -->
     <section class="row">
-        <main class="col-12 col-md-3 my-3 p-4 bg-light text-dark">
-            <h2>Your Word!</h2>
-            <section id="translate">
-                <article class="card p-3 bg-dark text-light">
-                </article>
-            </section>
-        </main>
+        <div class="col-lg-4 col-md-3 p-4 my-3 bg-light text-dark">
+            <h2 id="about"> Our Mission </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat temporibus eligendi quidem nulla
+                perspiciatis. Dolor doloremque aut deleniti adipisci eius beatae, asperiores soluta quibusdam
+                praesentium, sapiente esse ut eligendi odit?</p>
+            <h2 id="api">APIs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor illum error ducimus ex? Ut assumenda
+                aspernatur saepe aperiam molestiae eaque est dolore incidunt nulla quam dicta pariatur, obcaecati
+                deleniti illum!</p>
+            </div>
+
+        <!-- Container for Microsoft translate API data -->
+
+            <main class="col-lg-8 col-md-3 my-3 p-4 bg-light text-dark">
+                <h2>Translations!</h2>
+                <section id="translate">
+                    <article class="card p-3 bg-dark text-light">
+                    </article>
+                </section>
+            </main>
+        </section>
+
     </section>
+
+
+
+
 
     <!-- Footer? -->
     <footer>
@@ -96,7 +100,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-        <script src=“https://code.jquery.com/jquery-3.5.1.min.js”></script>
+    <script src=“https://code.jquery.com/jquery-3.5.1.min.js”></script>
     <script src="./assets/script.js"></script>
 </body>
 
