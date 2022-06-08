@@ -27,7 +27,7 @@ function search(value) {
         for (var result of data.results) {
             //Create container for dictionary results
             var dictContainer = $("<article>");
-            dictContainer.addClass("card p-3 my-2 bg-light text-dark");
+            dictContainer.addClass("card p-3 justify-content-center text-dark");
             dictionaryBox.append(dictContainer);
 
             //Display dictionary word
@@ -72,7 +72,7 @@ function search(value) {
         //Display image element
         var imgEl = $("<iframe>");
         $(imgEl).attr("src", data.data.embed_url);
-        imgEl.addClass("card p-3 bg-light text-dark");
+        imgEl.addClass("card p-3 justify-content-center text-dark");
         gifBox.append(imgEl);
     });
 }
@@ -82,7 +82,8 @@ function displaySearchHistory() {
     var searchedItems = JSON.parse(localStorage.getItem("searchTerm")) || [];
     resultsEl.empty();
     for (var item of searchedItems) {
-        var inputTextEl = $("<h2>");
+        var inputTextEl = $("<h3>");
+        inputTextEl.addClass("width")
         console.log(item);
         inputTextEl.text(item);
         resultsEl.append(inputTextEl);
@@ -102,7 +103,7 @@ inputForm.on("submit", function (event) {
 });
 
 //listens for clicks on the results text
-resultsEl.on("click", "h2", function () {
+resultsEl.on("click", "h3", function () {
     var term = $(this).data("term");
     search(term);
 })
