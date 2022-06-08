@@ -36,9 +36,11 @@ inputForm.on("submit", function (event) {
             dictionaryBox.append(defEl);
 
             var etyEl = $("<p>");
-            etyEl.addClass("card p-3 bg-light text-dark");
             $(etyEl).text(result.lexicalEntries[0].entries[0].etymologies);
-            dictionaryBox.append(etyEl);
+            if ($(etyEl).text.length > 2 ){
+                etyEl.addClass("card p-3 bg-light text-dark");
+                dictionaryBox.append(etyEl);
+            } 
         }
     });
 
@@ -48,12 +50,11 @@ inputForm.on("submit", function (event) {
         $(gifBox).empty();
 
         // For loop goes here
-        for (var result of data.url) {
-            console.log(result);
-            var h2El = $("<img>");
-            h2El.addClass("card p-3 bg-light text-dark");
-            $(h2El).text(result.url);
-            gifBox.append(h2El);
+            console.log(data.data.url);
+            var imgEl = $("<iframe>");
+            $(imgEl).attr("src", data.data.embed_url);
+            imgEl.addClass("card p-3 bg-light text-dark");
+            gifBox.append(imgEl);
 
             // var defEl = $("<p>");
             // defEl.addClass("card p-3 bg-light text-dark");
@@ -64,7 +65,6 @@ inputForm.on("submit", function (event) {
             // etyEl.addClass("card p-3 bg-light text-dark");
             // $(etyEl).text(result.lexicalEntries[0].entries[0].etymologies);
             // gifBox.append(etyEl);
-        }
     });
 })
 
