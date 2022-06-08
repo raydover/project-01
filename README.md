@@ -9,6 +9,9 @@
 3. [Visuals](#visuals)
 4. [Author and Aknowledgement](#author-and-aknowledgements)
 
+## User Story
+
+
 ## Description
 
 For our first group project we created a real-world interactive front-end application that we may have the opportunity to showcase to potential employers. Our user story and acceptance criteria depended on the application that we proposed & created. Last, our project had to meet specific project requirements outlined in our challenge requirements section of the project challenge document.
