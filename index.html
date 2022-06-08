@@ -6,29 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What's in a Word?</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@0;1&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
     <!-- Header and nav bar links here -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid d-flex flex-row">
-            <h1>What's in a Word?</h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex flex-row flex-grow">
+            <h1>What's in a <em>Word?</em></h1>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    <a class="nav-link" aria-current="page" href="#about">About</a>
                 </li>
-                <li><a class="nav-link active" aria-current="page" href="#api">APIs</a> </li>
+                <li><a class="nav-link" aria-current="page" href="#api">APIs</a> </li>
             </ul>
         </div>
     </nav>
 
     <!-- Word input and search button -->
     <section class="row">
-        <div class="col-lg-4 col-sm-3 p-4 my-3 mx-5 bg-light text-dark">
+        <div class="col-3 p-3 my-3 mx-5 text-dark form-box">
             <form id="word-search-form">
                 <fieldset>
                     <legend>Search for a Word!</legend>
@@ -41,33 +44,35 @@
             </form>
         </div>
 
-        <section id="search-result" class="d-none col-lg-3 col-sm-12 p-4 mx-4 my-3 bg-light text-dark">
+        <section id="search-result" class="d-none col-3 p-3 mx-5 my-3 text-dark">
             <h2></h2>
             <p></p>
         </section>
-    </section>
-
-    <!-- Container for group and API info -->
-    <section class="row d-flex flex-row">
-        <div class="flex-direction: column col-lg-4 col-md-3 p-4 my-3 mx-5 bg-light text-dark">
-            <h2 id="about"> Our Mission </h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat temporibus eligendi quidem nulla
-                perspiciatis. Dolor doloremque aut deleniti adipisci eius beatae, asperiores soluta quibusdam
-                praesentium, sapiente esse ut eligendi odit?</p>
-            <h2 id="api">APIs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor illum error ducimus ex? Ut assumenda
-                aspernatur saepe aperiam molestiae eaque est dolore incidunt nulla quam dicta pariatur, obcaecati
-                deleniti illum!</p>
-        </div>
 
         <!-- Container for GIPHY API image -->
-        <section id="gif" class="d-none col-lg-3 col-md-3 mx-4 my-3 p-4 bg-light text-dark">
+        <section id="gif" class="d-none col-3 p-3 my-3 mx-5 text-dark">
             <h2></h2>
             <img></img>
         </section>
     </section>
 
-    <!-- Footer? -->
+    <!-- Container for group and API info -->
+    <section class="row">
+        <div class="flex-direction: column col-12 p-4 my-3 mx-5 text-dark about-box">
+            <h2 id="about"> Our Mission </h2>
+            <p>Our goal with this project was to create a mini dictionary that is also fun! It is our belief that having
+                context and a visual aid paired with the definition will not only make the definition stick better but
+                will make expanding one’s vocabulary a fun experience. </p>
+            <h2 id="api">APIs</h2>
+            <p>This project was made with the <a href="https://developer.oxforddictionaries.com/" target="_blank">
+                    Oxford Dictionary API</a> and the <a href="https://developers.giphy.com/docs/api/" target="_blank">
+                    Giphy API</a> to create this project. </p>
+        </div>
+
+
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="card text-center">
             <div class="card-header">
