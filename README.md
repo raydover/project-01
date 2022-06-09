@@ -24,7 +24,7 @@ For our group project, we created an application that allows the user to search 
 
 * [Live Site](https://raydover.github.io/project-01/)
 
-* [Repository](https://git@github.com:raydover/project-01.git)
+* [Repository](https://github.com/raydover/project-01)
 
 ## Visuals
 
