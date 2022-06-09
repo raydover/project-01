@@ -24,8 +24,8 @@ For our first group project we created a real-world interactive front-end applic
 
 ## Visuals
 
-![07 Group Project 1 Screenshot](./insert link to group site screenshot here)
+![07 Group Project 1 Screenshot](./assets/what-s-in-a-word.png)
 
 ## Authors and Acknowledgements
 
-code created by UNCC Coding Bootcamp Students, optimized by students Jala Unterreiner, Patrick Long & Raymond Dover
+code created & optimized by UNCC Coding Bootcamp Students - Raymond Dover, Jala Unterreiner and Patrick Long
