@@ -1,6 +1,6 @@
 # 07 Group Project 1: Interactive Front-End Application
 
-# Insert Application Title Here
+# What's in a Word?
 
 ## Table of Contents
 
@@ -10,17 +10,21 @@
 4. [Author and Aknowledgement](#author-and-aknowledgements)
 
 ## User Story
+AS A user who needs a word defined,
 
+I WANT a dictionary that provides definitions, etymologies, and a visual example,
+
+SO THAT I have a fuller understanding of the words I use and have fun learning new ones. 
 
 ## Description
 
-For our first group project we created a real-world interactive front-end application that we may have the opportunity to showcase to potential employers. Our user story and acceptance criteria depended on the application that we proposed & created. Last, our project had to meet specific project requirements outlined in our challenge requirements section of the project challenge document.
+For our group project, we created an application that allows the user to search for a word and receive the definition, etymology, and a gif related to their search. The user’s searches are held in local storage and displayed on the page, and clicking the word will show the results again.We used the Oxford Dictionary API and the Giphy API to create this application.
 
 ## Resources
 
--[LIVE SITE](https://raydover.github.io/project-01/)
+* [Live Site](https://raydover.github.io/project-01/)
 
--[Repository](https://git@github.com:raydover/project-01.git)
+* [Repository](https://git@github.com:raydover/project-01.git)
 
 ## Visuals
 
